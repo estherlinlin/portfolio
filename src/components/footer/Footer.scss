@@ -1,0 +1,61 @@
+.footer {
+  background-color: #0779e4;
+  padding: 5rem 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #eee;
+  position: relative;
+
+  &__copyright {
+  }
+
+  .wave-container {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: -2rem;
+    display: flex;
+    animation: clouds 15s linear infinite alternate-reverse;
+
+    .wave {
+      width: 10rem;
+      height: 4rem;
+      //top: -24px;
+      border-radius: 50%;
+      background: #0779e4;
+      &:nth-child(2n + 2) {
+        background: #f7f7f7;
+      }
+    }
+  }
+}
+
+@keyframes clouds {
+  50% {
+    transform: translateX(-80%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+// .wave {
+//   position: absolute;
+//   height: 150px;
+//   width: 500px;
+//   left: -50px;
+//   background: #fff;
+
+//   .circle {
+//     position: relative;
+//     float: left;
+//     width: 50px;
+//     height: 50px;
+//     top: -24px;
+//     border-radius: 50px;
+
+//     &:nth-child(2n + 2) {
+//       top: -26px;
+//     }
+//   }
+// }
