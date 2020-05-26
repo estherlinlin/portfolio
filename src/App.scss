@@ -36,6 +36,8 @@
 //     transform: rotate(360deg);
 //   }
 // }
+@import "~bootstrap/scss/bootstrap";
+@import "./shared/variable.scss";
 
 :root {
   --light-brown: #795548;
@@ -43,18 +45,26 @@
   --white: #fff;
   --dark-grey: #777;
   --brown-grey: rgb(161, 160, 160);
-  --light-grey: #f7f7f7;
+  --light-grey: #f4f4f4;
   --default-font-size: 1.6rem;
-  --grid-width:114rem;
+  --grid-width: 114rem;
 }
 
-$sz-largest: 75em; // 1200px
-$sz-large: 68.75em; // 1100px
-$sz-medium: 56.25em; // 900px
-$sz-small: 37.5em; // 600px
-$sz-smallest: 31.25em; // 500px
-$sz-xsmall: 26.25em; // 380px
+// $sz-largest: 75em; // 1200px
+// $sz-large: 68.75em; // 1100px
+// $sz-medium: 56.25em; // 900px
+// $sz-small: 37.5em; // 600px
+// $sz-smallest: 31.25em; // 500px
+// $sz-xsmall: 26.25em; // 380px
 
+// :export {
+//   sz-largest: $sz-largest; // 1200px
+//   sz-large: $sz-large; // 1100px
+//   sz-medium: $sz-medium; // 900px
+//   sz-small: $sz-small; // 600px
+//   sz-smallest: $sz-smallest; // 500px
+//   sz-xsmall: $sz-xsmall; // 380px
+// }
 //global reset
 *,
 *::before,
@@ -71,17 +81,22 @@ html {
   font-size: 62.5%; // 10/16
 
   @media only screen and (max-width: $sz-large) {
-    font-size: 50%;
+    font-size: 75%; //12px
+  }
+  @media only screen and (max-width: $sz-medium) {
+    font-size: 56.25%; //9px
+  }
+  @media only screen and (max-width: $sz-small) {
+    font-size: 50%; //8px
   }
 }
 
 body {
   box-sizing: border-box;
-  padding: 1.5rem;
+  // padding: 1.5rem;
   font-size: 1.4rem;
 
   @media only screen and (max-width: $sz-smallest) {
     padding: 0;
   }
 }
-

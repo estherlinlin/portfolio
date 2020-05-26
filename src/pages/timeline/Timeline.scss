@@ -1,51 +1,29 @@
-.container {
-  max-width: var(--grid-width);
+@import "../../shared/variable.scss";
+@import "../../shared/base.scss";
+
+.content {
+  //max-width: var(--grid-width);
   margin: 0 auto;
-  //border: 1px solid green;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  
+
+  @media only screen and (max-width: $sz-medium) {
+    flex-direction: column;
+  }
 }
+
 
 .section-timeline {
-  background-color: #f7f7f7;
+  background-color: var(--light-grey);
   padding: 15rem 10rem;
   margin-top: -9vh;
-  //border: 1px solid red;
-}
-
-
-.heading-secondary {
-    font-size: 2.8rem;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 4rem;
-    margin-
-    //text style
-    // background-image: linear-gradient(
-    //   to right,
-    //   $color-primary,
-    //   $color-primary-medium
-    // );
-    // -webkit-background-clip: text;
-    // color: transparent;
-    // letter-spacing: 2px;
-    // transition: all 0.2s;
-  
-    // @include respond(tab-port){
-    //   font-size: 2.5rem;
-    // }
-  
-    // @include respond(phone){
-    //   font-size: 2rem;
-    // }
-  
-    &:hover {
-      transform: skewX(10deg) scale(1.05);
-      text-shadow: 0.5rem 0.4rem 1rem rgba(var(--black), 0.1);
-    }
+ 
+  @media only screen and (max-width: $sz-large) {
+    padding: 15rem 6rem;
   }
-  
+}
 
 .timeline__education {
   padding: 4em;
@@ -55,13 +33,19 @@
   border-style: dashed;
   border-radius: 10px;
   flex: 0 0 40%;
+  margin-left: 8rem;
 }
 
 .timeline__job {
   padding: 6rem;
   border-bottom: 6px dotted #0779e4;
+  border-right: 6px dotted #0779e4;
   border-radius: 10px;
   flex: 1;
+  @media only screen and (max-width: $sz-medium) {
+    border-left: 6px dotted #0779e4;
+    margin-left: 8rem;
+  }
 }
 
 .timeline-item {
@@ -85,34 +69,31 @@
     background-color: #ffd31d;
     border-radius: 3px;
     left: -15rem;
-    span::after{
-        content:"";
-        border-width: 10px 0 10px 10px;
-        border-style: solid;
-        border-color: transparent  transparent  transparent #ffd31d;
-        right: -10px;
-        top:2px;
-        position: absolute;
+    span::after {
+      content: "";
+      border-width: 10px 0 10px 10px;
+      border-style: solid;
+      border-color: transparent transparent transparent #ffd31d;
+      right: -10px;
+      top: 2px;
+      position: absolute;
     }
   }
   &__list {
-    
   }
 
   &__title {
   }
 
   &__projects {
-      ul{
-        list-style: none;
-        width: 80%;
+    ul {
+      list-style: none;
+      //width: 80%;
 
-        li{
-            padding: 1.5rem;
-            font-size: 1.6rem;
-        }
+      li {
+        padding: 1.5rem;
+        font-size: 1.6rem;
       }
+    }
   }
 }
-
-

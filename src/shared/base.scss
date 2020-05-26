@@ -1,0 +1,16 @@
+.heading-secondary {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 4rem;
+
+  &:hover {
+    transform: skewX(10deg) scale(1.05);
+    text-shadow: 0.5rem 0.4rem 1rem rgba(var(--black), 0.1);
+  }
+
+  @media only screen and (max-width: $sz-small) {
+    // font-size: 2.6rem;
+    // margin-left: -6rem;
+  }
+}

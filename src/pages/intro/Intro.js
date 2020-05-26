@@ -1,10 +1,14 @@
 import React from "react";
 import "./Intro.scss";
 import Button from "../../components/button/Button";
+import Menu from "../../components/menu/Menu";
+import { introContent } from "../../portfolioData";
+
 
 const intro = () => (
-
-    <section className="section-intro">
+  <div>
+    <Menu />
+    <header className="section-intro">
       <div className="intro__container">
         <div className="sun"></div>
         <div className="cloud-container">
@@ -78,14 +82,20 @@ const intro = () => (
       </div>
       <div class="intro__heading">
         <h1 class="heading-primary">
-          <span class="heading-primary--main">Hi, there!</span>
-          <span class="heading-primary--sub">Web Development &amp; FrontEnd Development
-          </span>
+          <span class="heading-primary--main">{introContent.title}</span>
+          <span class="heading-primary--sub">{introContent.subTitle}</span>
         </h1>
-        <Button className="btn btn--white btn--animate" href={"#contact"}>Contact Me</Button>
-        {/* <a href="" class="btn btn--white btn--animate">Welcome</a> */}
+        <div className="btn-container">
+          <Button className="btn btn--white btn--animate" href={"#contact"}>
+            Contact Me
+          </Button>
+          <Button className="btn btn--white btn--animate" href={"#contact"}>
+            Download Resume
+          </Button>
+        </div>
       </div>
-    </section>
-  );
+    </header>
+  </div>
+);
 
-  export default intro;
+export default intro;

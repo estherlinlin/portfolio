@@ -10,8 +10,6 @@ const footer = () => (
         <div className="wave"></div>
         <div className="wave"></div>
         <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
     </div>
     <div className="container">
       <p className="footer__copyright">
