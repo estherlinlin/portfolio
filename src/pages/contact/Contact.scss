@@ -6,8 +6,8 @@
 @import "../../shared/base.scss";
 
 .section-contact {
-  background-color: var(--brown-grey);
-  padding: 10rem 10rem;
+  background-color: var(--medium-grey);
+  padding: 8rem 10rem;
   //position: relative;
   overflow: hidden;
 
@@ -22,9 +22,6 @@
 }
 
 .contact {
-
-  // width: 100%;
-  //height: 100%;
   display: flex;
   flex-wrap: wrap;
   
@@ -33,21 +30,15 @@
   }
 
   &__detail {
-    padding: 2rem;
-
+    padding: 3rem;
     flex: 1 0 35%;
-    // position: relative;
   }
 
   &__info {
-    //height: 32.5rem;
     height: auto;
     height: 100%;
-
-    // padding: 1rem;
     display: flex;
     flex-direction: column;
-    // align-items: stretch;
   }
 
   &__list {
@@ -56,6 +47,9 @@
 
   &__list-item {
     list-style: none;
+    li span{
+      font-size: 1.8rem;
+    }
   }
 
   &__icon {
@@ -66,13 +60,6 @@
       text-align: center;
       margin-left: 1rem;
     }
-  }
-
-  &__media {
-    // align-self: flex-end;
-    // position: absolute;
-    // bottom:0;
-    // width: 100%;
   }
 
   &__media-link:link,
@@ -87,23 +74,21 @@
     flex: 1 0 65%;
 
     border-radius: 2rem;
-    background-color: wheat;
-    padding: 2rem;
+    background-color: var(--light-grey);
+    padding: 3rem 4rem;
     position: relative;
     z-index: 3;
+    box-shadow: 1rem 1rem 2rem rgba(grey, 0.3);
 
     &::after{
       content: "";
-      // width: 8rem;
-      // height:5rem;
-      // background-color: red;
       border-bottom-left-radius: 2rem;
       position: absolute;
       bottom: 8rem;
       left:-9rem;
       border-style: solid;
       border-width: 5rem 9rem .5rem 0;
-      border-color: transparent wheat transparent  transparent;
+      border-color: transparent var(--light-grey) transparent  transparent;
       transform: skewY(-10deg);
       z-index: -1;
     }
@@ -112,7 +97,7 @@
 
 .form {
   &__group:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   &__input {
@@ -123,19 +108,19 @@
     border-radius: 3px;
     background-color: rgba(white, 0.5);
     border: none;
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px dotted var(--primary-yellow);
     width: 100%;
     display: block;
     transition: all 0.3s;
 
     &:focus {
       outline: none;
-      box-shadow: 0 1rem 2rem rgba(var(--black), 0.3);
-      border: 2px solid green;
+      box-shadow: 0 1rem 2rem rgba(grey, 0.3);
+      border: 2px solid var(--primary-yellow);
     }
 
     &:focus:invalid {
-      border-left: 3px solid red;
+      border-left: 4px solid red;
     }
 
     &::-webkit-input-placeholder {
@@ -158,3 +143,4 @@
     transform: translateY(-4rem);
   }
 }
+

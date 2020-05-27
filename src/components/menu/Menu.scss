@@ -34,7 +34,13 @@
 
 .navigation-nav li a:hover,
 .navigation-nav .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: var(--light-grey);
+  border-bottom: 5px solid var(--primary-yellow);
+
+  @media only screen and (max-width: $sz-medium) {
+    border-left: 5px solid var(--primary-yellow);
+    border-bottom: none;
+  }
 }
 
 .navigation-nav .logo {
@@ -124,8 +130,6 @@
 .navigation-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
-
-/* 48em = 768px */
 
 @media only screen and (min-width: $sz-medium) {
   .navigation-nav li {

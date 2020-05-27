@@ -38,18 +38,44 @@
 // }
 @import "~bootstrap/scss/bootstrap";
 @import "./shared/variable.scss";
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+// @import url("https://fonts.googleapis.com/css?family=Oleo+Script");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
 
 :root {
+  --default-font-size: 1.6rem;
+  --grid-width: 114rem;
+  --heading-font:"Lobster";
+  --title-font:"Oswald";
   --light-brown: #795548;
   --black: #000;
   --white: #fff;
   --dark-grey: #777;
   --brown-grey: rgb(161, 160, 160);
   --light-grey: #f4f4f4;
-  --default-font-size: 1.6rem;
-  --grid-width: 114rem;
+  --medium-grey: #dddddd;
+
+  --light-blue: #74dbef;
+  --full-blue:#00a8cc;
+  --primary-blue: #1b6ca8;
+  --light-green:#b7e778;
+  --medium-green:#007944;
+  --orange:#e8751a;
+  --light-orange:#fDB887;
+  --primary-orange:#f5a31a;
+  --pink-orange:#ff8364;
+  --wheat: #f7e0a3;
+  --primary-yellow: #ffd31d;
 }
 
+  // --light-blue: #74dbef;
+  // --medium-blue: #1b6ca8;
+  // --light-green:#b7e778;
+  // --medium-green:#007944;
+  // --orange:#e8751a;
+  // --light-orange:#fDB887;
+  // --pink-orange:#ff8364;
+  // --wheat: #f7e0a3;
 // $sz-largest: 75em; // 1200px
 // $sz-large: 68.75em; // 1100px
 // $sz-medium: 56.25em; // 900px

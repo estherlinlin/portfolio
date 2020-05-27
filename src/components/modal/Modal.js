@@ -62,7 +62,7 @@ const Modal = (props) => {
             <div className="popup__tech">
               <ul className="popup__tag-list">
                 {props.tags.map((item) => {
-                  return <li className="popup__tag">{item}</li>;
+                  return <li className={`popup__tag ${item.type}`}>{item.text}</li>;
                 })}
               </ul>
             </div>

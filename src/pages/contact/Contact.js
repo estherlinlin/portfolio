@@ -15,7 +15,7 @@ import {
 import Button from "react-bootstrap/Button";
 
 const contact = () => (
-  <section class="section-contact">
+  <section class="section-contact" id="contact">
     {/* <div class="row"> */}
       <div class="contact">
       <div className="contact__detail">
@@ -28,7 +28,7 @@ const contact = () => (
               <li>
                 <div className="contact__icon">
                   <FontAwesomeIcon icon={faEnvelope} />
-                  <span>pinchunchun1</span>
+                  <span><a href="mailto:pinchunchun112@gmail.com">pinchunchun112@gmail.com</a></span>
                 </div>
               </li>
               <li>
@@ -78,7 +78,7 @@ const contact = () => (
           </div>
           <div class="form__group">
             <input
-              type="text"
+              type="email"
               class="form__input"
               placeholder="Email address"
               id="email"
@@ -92,10 +92,11 @@ const contact = () => (
             <textarea
               class="form__input"
               placeholder="Leave a message"
+              required
             ></textarea>
           </div>
           <div class="form-group">
-            <button type="submit" class="btn btn--white">
+            <button type="submit" class="btn btn--yellow">
               Send
             </button>
           </div>

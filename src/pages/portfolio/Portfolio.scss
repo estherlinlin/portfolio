@@ -15,7 +15,7 @@
 
 .section-portfolio {
   background-color: var(--light-grey);
-  padding: 10rem 10rem;
+  padding: 8rem 10rem;
   position: relative;
   overflow: hidden;
   @media only screen and (max-width: $sz-large) {
@@ -50,7 +50,7 @@
   &__icon {
     position: absolute;
     font-size: 5rem;
-    color: white;
+    color: var(--dark-grey);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -83,11 +83,14 @@
     width: 100%;
     padding: 0 10px;
     opacity: 0;
-    bottom: -30%;
+    // bottom: -30%;
     left: 0;
     height: 65%;
     transition: all 0.2s;
     backface-visibility: hidden;
+    h3 {
+      margin-top: 3rem;
+    }
   }
 
   &__item:hover &__figcap {

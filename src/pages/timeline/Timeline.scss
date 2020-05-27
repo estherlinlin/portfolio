@@ -7,19 +7,17 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
 
   @media only screen and (max-width: $sz-medium) {
     flex-direction: column;
   }
 }
 
-
 .section-timeline {
   background-color: var(--light-grey);
-  padding: 15rem 10rem;
+  padding: 15rem 10rem 8rem 10rem;
   margin-top: -9vh;
- 
+
   @media only screen and (max-width: $sz-large) {
     padding: 15rem 6rem;
   }
@@ -79,10 +77,14 @@
       position: absolute;
     }
   }
-  &__list {
-  }
 
-  &__title {
+  &__tag {
+    font-size: 1.2rem;
+    display: inline-block;
+    background-color: yellowgreen;
+    padding: 0.5rem;
+    border-radius: 3px;
+    margin: 0.5rem;
   }
 
   &__projects {

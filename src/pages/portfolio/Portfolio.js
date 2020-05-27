@@ -1,19 +1,13 @@
 import React from "react";
 import "./Portfolio.scss";
 import Modal from "../../components/modal/Modal";
-import project_1 from "../../assets/img/green.jpg";
-import project_2 from "../../assets/img/green.jpg";
-import project_3 from "../../assets/img/green.jpg";
-import project_4 from "../../assets/img/green.jpg";
-import project_5 from "../../assets/img/green.jpg";
-import project_6 from "../../assets/img/green.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 import { portfolioContent } from "../../portfolioData";
 
 const portfolio = () => (
-  <section className="section-portfolio">
+  <section className="section-portfolio" id="portfolio">
     <div class="u-center-text u-mb-md">
       <h2 class="heading-secondary">Portfolio</h2>
     </div>
@@ -23,12 +17,16 @@ const portfolio = () => (
           return (
             <figure className="projects__item">
               <a href={`#${item.href}`} className="projects__link">
-                <img src={project_4} className="projects__img"></img>
+                <img
+                  src={item.coverimg_path}
+                  alt={item.coverimg_alt}
+                  className="projects__img"
+                ></img>
                 <div className="projects__icon">
                   <FontAwesomeIcon icon={faPlayCircle} />
                 </div>
                 <figcaption className="projects__figcap">
-                  <h4>{item.title}</h4>
+                  <h3>{item.title}</h3>
                 </figcaption>
               </a>
               <Modal
@@ -42,7 +40,6 @@ const portfolio = () => (
             </figure>
           );
         })}
-
       </div>
     </div>
   </section>

@@ -11,7 +11,7 @@ const footer = () => (
         <div className="wave"></div>
         <div className="wave"></div>
     </div>
-    <div className="container">
+    <div className="content">
       <p className="footer__copyright">
         2020 &copy; EstherLin. All rights reserved
       </p>

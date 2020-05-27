@@ -2,7 +2,7 @@
 @import "../../shared/base.scss";
 
 .section-skills {
-  padding: 10rem 10rem;
+  padding: 8rem 10rem;
   position: relative;
   overflow: hidden;
   @media only screen and (max-width: $sz-large) {
@@ -47,13 +47,7 @@
 //   }
 // }
 
-.heading-tertiary {
-  font-size: 2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 10px;
-}
+
 
 .bottom-line {
   height: 2px;
@@ -75,7 +69,7 @@
     content: "";
     width: 130%;
     height: 100%;
-    background-color: #00a78e;
+    background-color: #1b6ca8;
     transform: skewX(15deg);
     z-index: -1;
   }

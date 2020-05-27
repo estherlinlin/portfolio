@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Oleo+Script");
+
 @import "../../shared/variable.scss";
 
 .section-intro {
   //height: 80vh;
   //position: relative;
-  background-color: #d8c593;
+  background-color: var(--wheat);
 
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
   //max-width: var(--grid-width);
   height: 88vh;
+  overflow: hidden;
 
   @media only screen and (max-width: $sz-small) {
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 75% 95%, 0% 90%);
@@ -19,14 +20,14 @@
 .intro__container {
   // filter: grayscale(70%);
   position: relative;
-  overflow: hidden;
+
   //padding: 1rem;
   width: 100%;
   height: 73vh;
   background-image: linear-gradient(
     to left bottom,
-    lightblue,
-    rgba(#00a8cc, 0.3)
+    var(--light-blue),
+    rgba(#00a8cc, 0.4)
   );
 }
 
@@ -35,7 +36,7 @@
   position: absolute;
   width: 70%;
   height: 75%;
-  clip-path: polygon(0% 100%, 60% 0%, 100% 100%);
+  clip-path: polygon(0% 100%, 59% 0%, 64% 3%,100% 100%);
 
   bottom: 10%;
   right: -18%;
@@ -52,12 +53,13 @@
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
-  background-color: #ffd31d;
-  box-shadow: 1rem 1rem 3rem rgba(#fc8210, 0.3);
+  background-color: var(--primary-yellow);
+  box-shadow: 1.5rem 1rem 2rem rgba(#fc8210, 0.4);
   position: absolute;
   top: 10rem;
-  right: 15rem;
+  right: 18rem;
   z-index: 0;
+  
 }
 
 .mountain {
@@ -69,14 +71,19 @@
   
   border-width: 0px 0rem 30rem 60rem;
   border-style: solid;
-  border-color: transparent transparent green transparent;
+  border-color: transparent transparent var(--medium-green) transparent;
+  border-bottom-left-radius: 5rem;
+  border-top-right-radius: 1rem;
+  z-index: 1;
 
   &::after {
     content: "";
     position: absolute;
     border-width: 0 25rem 30rem 0rem;
     border-style: solid;
-    border-color: transparent transparent greenyellow transparent;
+    border-color: transparent transparent var(--light-green) transparent;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 6rem;
   }
 
   @media only screen and (max-width: $sz-large) {
@@ -90,7 +97,7 @@
   height: 30%;
   bottom: 0;
   left: 0;
-  background-color: #0779e4;
+  background-color: var(--primary-blue);
   border-radius: 80% 0 0 0;
 
   @media only screen and (max-width: $sz-large) {
@@ -123,7 +130,7 @@
     position: absolute;
     width: 8rem;
     height: 9rem;
-    background: #fff;
+    background: var(--light-orange);
 
     right: -3rem;
     top: -6rem;
@@ -137,7 +144,7 @@
 
     width: 8rem;
     height: 14rem;
-    background: #fff;
+    background: var(--pink-orange);
     //margin-bottom:30px;
 
     // right: -3.5rem;
@@ -152,7 +159,7 @@
 
   &:nth-child(3) {
     height: 8rem;
-    right: 12%;
+    right: 11%;
   }
 
   &:nth-child(4) {
@@ -164,12 +171,12 @@
     right: 20%;
   }
   &:nth-child(6) {
-    height: 15rem;
+    height: 17rem;
     right: 25%;
 
     .leaf-tria {
       height: 11rem;
-      background: red;
+      background: var(--orange);
     }
   }
   &:nth-child(7) {
@@ -200,7 +207,7 @@
     width: 1.2rem;
     border-radius: 0;
     background-color: var(--light-brown);
-    height: 50%;
+    height:45%;
   }
 }
 
@@ -226,7 +233,7 @@
       position: absolute;
       border-width: 0 1em 1.2rem 0rem;
       border-style: solid;
-      border-color: transparent transparent #f5a31a transparent;
+      border-color: transparent transparent var(--primary-orange) transparent;
     }
     &::after {
       transform: rotate(54deg);
@@ -245,7 +252,7 @@
     bottom: 0;
     left: 0.5rem;
     border-radius: 10rem 10rem 7rem 7rem;
-    background-color: #f5a31a;
+    background-color: var(--primary-orange);
   }
 
   .tail-container {
@@ -256,7 +263,7 @@
       position: absolute;
       width: 1rem;
       height: 0.6rem;
-      background-color: #f5a31a;
+      background-color: var(--primary-orange);
       left: 70%;
       border-radius: 5px;
 
@@ -265,7 +272,7 @@
       }
 
       .stripe {
-        background-color: #f7f7f7;
+        background-color: var(--light-grey);
       }
     }
   }
@@ -371,7 +378,7 @@
 
   &--main {
     display: block; //span is default by inline
-    font-family: "Oleo Script", cursive;
+    font-family: var(--heading-font),sans-serif;
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 2.5rem;

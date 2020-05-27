@@ -3,7 +3,7 @@ import "./Skills.scss";
 import { skillContent } from "../../portfolioData";
 
 const skills = () => (
-  <section className="section-skills">
+  <section className="section-skills" id="skills"> 
     <div class="u-center-text u-mb-md">
       <h2 class="heading-secondary">Skills</h2>
     </div>

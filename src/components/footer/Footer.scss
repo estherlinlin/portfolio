@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Oleo+Script");
 @import "../../shared/variable.scss";
 
 .footer {
-  background-color: #0779e4;
+  background-color: var(--primary-blue);
   padding: 5rem 0;
   font-size: 1.6rem;
   font-weight: 400;
-  color: #eee;
+  color: var(--medium-grey);
   position: relative;
 
   &__copyright {
@@ -28,9 +27,9 @@
       height: 4rem;
       //top: -24px;
       border-radius: 50%;
-      background: #0779e4;
+      background: var(--primary-blue);
       &:nth-child(2n + 2) {
-        background: var(--brown-grey);
+        background: var(--medium-grey);
       }
 
       @media only screen and (max-width: $sz-smallest) {
