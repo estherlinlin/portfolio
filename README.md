@@ -1,7 +1,7 @@
 ## Portfolio web 
 
 ## Content
-⋅⋅* Timeline
-⋅⋅* Skills
-⋅⋅* Portfolio
-⋅⋅* Contact
+* Timeline
+* Skills
+* Portfolio
+* Contact
