@@ -1,0 +1,163 @@
+@import "../../shared/variable.scss";
+@import "../../shared/base.scss";
+
+.popup {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+  background-color: rgba(var(--black), 0.8);
+
+  // when set to display:none, cant be animate (without numbers)
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+
+
+
+  //work with anchor /#popup
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  //animate when popup opens
+  &:target &__container {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      position: absolute;
+      display: inline-block;
+      top: 1rem;
+      right: 1rem;
+      text-decoration: none;
+
+      color: var(--black);
+      font-size: 3rem;
+      transition: all 0.2s;
+      line-height: 1;
+    }
+
+    &:hover {
+      color: var(--light-grey);
+    }
+  }
+
+  &__container {
+    width: 75%;
+    // max-height: 70%;
+    box-shadow: 0 1rem 4rem rgba(var(--black), 0.3);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-40%, -50%) scale(0.25);
+    padding: 3rem 5rem;
+    background-color: #fff;
+    border-radius: 3px;
+
+    //img overlap
+    overflow: hidden;
+
+    //add animate to popups when opened
+    opacity: 0;
+    transition: all 0.4s 0.1s;
+
+    @media only screen and (max-width: $sz-large) {
+      padding: 3rem 2rem;
+    }
+
+    @media only screen and (max-width: $sz-medium) {
+      width: 90%;
+      overflow-y: auto;
+      // height: 90%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    //flex-wrap: wrap;
+    padding: 1rem;
+    margin-top: -2rem;
+
+    @media only screen and (max-width: $sz-medium) {
+      flex-direction: column;
+    }
+  }
+
+  &__left-content {
+    flex: 2;
+  }
+
+  &__video {
+    width: 100%;
+  }
+
+  &__right-content {
+    margin-left: 2rem;
+    flex: 1;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__desc-list {
+    // list-style: none;
+    padding-right: 1rem;
+    font-size: 1.6rem;
+  }
+
+  &__tag-list {
+    list-style: none;
+  }
+  &__tag {
+    font-size: 1.2rem;
+    display: inline-block;
+
+    background-color: yellowgreen;
+    padding: 0.5rem;
+    border-radius: 3px;
+    margin: 0.5rem;
+  }
+  //add blur to the bg
+  backdrop-filter: blur(3px);
+
+  //feature query
+  //if browser supports select property then apply below css
+  @supports (backdrop-filter: blur(3px)) or (-webkit-backdrop-filter: blur(3px)) {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    background-color: rgba(var(--black), 0.3);
+  }
+}
+
+.carousel__img {
+  // width: auto;
+
+  // max-height: 60rem;
+}
+
+.carousel {
+  //height: 40vh;
+  // height: fit-content;
+}
+
+.carousel-indicators,
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(100%);
+}
+
+.vertical-img {
+  margin: 0 auto;
+  height: 100% !important;
+  max-height: 40rem;
+}

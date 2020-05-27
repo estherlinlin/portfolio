@@ -1,0 +1,128 @@
+// .App {
+//   text-align: center;
+// }
+
+// .App-logo {
+//   height: 40vmin;
+//   pointer-events: none;
+// }
+
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
+
+// .App-header {
+//   background-color: #282c34;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: calc(10px + 2vmin);
+//   color: white;
+// }
+
+// .App-link {
+//   color: #61dafb;
+// }
+
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+@import "~bootstrap/scss/bootstrap";
+@import "./shared/variable.scss";
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+// @import url("https://fonts.googleapis.com/css?family=Oleo+Script");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+:root {
+  --default-font-size: 1.6rem;
+  --grid-width: 114rem;
+  --heading-font:"Lobster";
+  --title-font:"Oswald";
+  --light-brown: #795548;
+  --black: #000;
+  --white: #fff;
+  --dark-grey: #777;
+  --brown-grey: rgb(161, 160, 160);
+  --light-grey: #f4f4f4;
+  --medium-grey: #dddddd;
+
+  --light-blue: #74dbef;
+  --full-blue:#00a8cc;
+  --primary-blue: #1b6ca8;
+  --light-green:#b7e778;
+  --medium-green:#007944;
+  --orange:#e8751a;
+  --light-orange:#fDB887;
+  --primary-orange:#f5a31a;
+  --pink-orange:#ff8364;
+  --wheat: #f7e0a3;
+  --primary-yellow: #ffd31d;
+}
+
+  // --light-blue: #74dbef;
+  // --medium-blue: #1b6ca8;
+  // --light-green:#b7e778;
+  // --medium-green:#007944;
+  // --orange:#e8751a;
+  // --light-orange:#fDB887;
+  // --pink-orange:#ff8364;
+  // --wheat: #f7e0a3;
+// $sz-largest: 75em; // 1200px
+// $sz-large: 68.75em; // 1100px
+// $sz-medium: 56.25em; // 900px
+// $sz-small: 37.5em; // 600px
+// $sz-smallest: 31.25em; // 500px
+// $sz-xsmall: 26.25em; // 380px
+
+// :export {
+//   sz-largest: $sz-largest; // 1200px
+//   sz-large: $sz-large; // 1100px
+//   sz-medium: $sz-medium; // 900px
+//   sz-small: $sz-small; // 600px
+//   sz-smallest: $sz-smallest; // 500px
+//   sz-xsmall: $sz-xsmall; // 380px
+// }
+//global reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  //inherit from body, good practice and more fexible when need to change
+}
+
+html {
+  // define 1 rem to 10px which default is 16px in most browsers
+  // for not lock down users setting for font-size in browser
+  font-size: 62.5%; // 10/16
+
+  @media only screen and (max-width: $sz-large) {
+    font-size: 75%; //12px
+  }
+  @media only screen and (max-width: $sz-medium) {
+    font-size: 56.25%; //9px
+  }
+  @media only screen and (max-width: $sz-small) {
+    font-size: 50%; //8px
+  }
+}
+
+body {
+  box-sizing: border-box;
+  // padding: 1.5rem;
+  font-size: 1.4rem;
+
+  @media only screen and (max-width: $sz-smallest) {
+    padding: 0;
+  }
+}

@@ -1,0 +1,146 @@
+// * {
+//   border: 1px solid red !important;
+// }
+
+@import "../../shared/variable.scss";
+@import "../../shared/base.scss";
+
+.section-contact {
+  background-color: var(--medium-grey);
+  padding: 8rem 10rem;
+  //position: relative;
+  overflow: hidden;
+
+  @media only screen and (max-width: $sz-large) {
+    padding: 10rem 6rem;
+  }
+}
+
+.row {
+
+  //width: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  
+  @media only screen and (max-width: $sz-medium) {
+    flex-direction: column;
+  }
+
+  &__detail {
+    padding: 3rem;
+    flex: 1 0 35%;
+  }
+
+  &__info {
+    height: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list {
+    margin-bottom: 2rem;
+  }
+
+  &__list-item {
+    list-style: none;
+    li span{
+      font-size: 1.8rem;
+    }
+  }
+
+  &__icon {
+    font-size: 3rem;
+    span {
+      //display: inline-block;
+      font-size: 2rem;
+      text-align: center;
+      margin-left: 1rem;
+    }
+  }
+
+  &__media-link:link,
+  &__media-link:visited {
+    margin-right: 1rem;
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+  }
+
+  &__form {
+    flex: 1 0 65%;
+
+    border-radius: 2rem;
+    background-color: var(--light-grey);
+    padding: 3rem 4rem;
+    position: relative;
+    z-index: 3;
+    box-shadow: 1rem 1rem 2rem rgba(grey, 0.3);
+
+    &::after{
+      content: "";
+      border-bottom-left-radius: 2rem;
+      position: absolute;
+      bottom: 8rem;
+      left:-9rem;
+      border-style: solid;
+      border-width: 5rem 9rem .5rem 0;
+      border-color: transparent var(--light-grey) transparent  transparent;
+      transform: skewY(-10deg);
+      z-index: -1;
+    }
+  }
+}
+
+.form {
+  &__group:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  &__input {
+    font-family: inherit;
+    font-size: 1.4rem;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 3px;
+    background-color: rgba(white, 0.5);
+    border: none;
+    border-bottom: 2px dotted var(--primary-yellow);
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(grey, 0.3);
+      border: 2px solid var(--primary-yellow);
+    }
+
+    &:focus:invalid {
+      border-left: 4px solid red;
+    }
+
+    &::-webkit-input-placeholder {
+      color: var(--dark-grey);
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}
+

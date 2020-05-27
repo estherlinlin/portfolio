@@ -1,0 +1,49 @@
+@import "../../shared/variable.scss";
+
+.footer {
+  background-color: var(--primary-blue);
+  padding: 5rem 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--medium-grey);
+  position: relative;
+
+  &__copyright {
+  }
+
+  .wave-container {
+    // left: 50%;
+    // transform: translateX(-50%);
+
+    position: absolute;
+    top: -2rem;
+    display: flex;
+    animation: wave 15s linear infinite alternate-reverse;
+
+
+
+    .wave {
+      width: 10rem;
+      height: 4rem;
+      //top: -24px;
+      border-radius: 50%;
+      background: var(--primary-blue);
+      &:nth-child(2n + 2) {
+        background: var(--medium-grey);
+      }
+
+      @media only screen and (max-width: $sz-smallest) {
+        width: 5rem;
+      }
+    }
+  }
+}
+
+@keyframes wave {
+  50% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
