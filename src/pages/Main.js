@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Menu from "../components/menu/Menu"
 import Intro from "./intro/Intro";
 import Timeline from "./timeline/Timeline";
 import Skills from "./skills/Skills";

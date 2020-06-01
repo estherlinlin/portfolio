@@ -74,9 +74,10 @@
     }
 
     @media only screen and (max-width: $sz-medium) {
-      width: 90%;
       overflow-y: auto;
-      // height: 90%;
+      width: 95%;
+      max-height: 85%;
+      min-height: 65%;
     }
   }
 

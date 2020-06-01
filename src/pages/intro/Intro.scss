@@ -46,7 +46,7 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
 }
 .sun {
   z-index: 1;
@@ -292,8 +292,8 @@
     left: 5%;
     top: 5%;
     background: #fff;
-    -webkit-border-radius: 100px / 50px;
-    border-radius: 100px / 50px;
+    -webkit-border-radius: 10rem / 5rem;
+    border-radius: 10rem / 5rem;
     animation: clouds 10s linear infinite;
 
     &::before,
@@ -304,8 +304,8 @@
       position: absolute;
       background: #fff;
       left: 5rem;
-      -webkit-border-radius: 100px / 50px;
-      border-radius: 100px / 50px;
+      -webkit-border-radius: 10rem / 5rem;
+      border-radius: 10rem / 5rem;
     }
 
     &::after {

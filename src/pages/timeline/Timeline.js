@@ -4,8 +4,8 @@ import { timelineContent } from "../../portfolioData";
 
 const timeline = () => (
   <section className="section-timeline" id="timeline"> 
-    <div class="u-center-text u-mb-md">
-      <h2 class="heading-secondary">Education &amp; Experience</h2>
+    <div className="u-center-text u-mb-md">
+      <h2 className="heading-secondary">Education &amp; Experience</h2>
     </div>
     <div className="content">
       <div className="timeline__education">
@@ -32,7 +32,6 @@ const timeline = () => (
               <br />
               2020.02
             </span>
-            <span></span>
           </h4>
           <div className="timeline-item__circle"></div>
           <h3 className="timeline-item__title">Garmin Corp.</h3>

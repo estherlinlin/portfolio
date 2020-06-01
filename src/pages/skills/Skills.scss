@@ -19,19 +19,17 @@
 
   @media only screen and (max-width: $sz-medium) {
     flex-direction: column;
-    
   }
 }
 
 .skill__left {
   flex: 0 0 30%;
-
 }
 .skill__right {
   flex: 1;
   @media only screen and (max-width: $sz-medium) {
     order: -1;
-    margin-bottom: 3rem;;
+    margin-bottom: 3rem;
   }
 }
 
@@ -46,8 +44,6 @@
 //     text-shadow: 0.5rem 0.4rem 1rem rgba(var(--black), 0.1);
 //   }
 // }
-
-
 
 .bottom-line {
   height: 2px;
@@ -115,7 +111,7 @@
 
     .progress {
       fill: none;
-      stroke-width: 1.3rem;
+      stroke-width: 1.1rem;
       stroke: #27e1ae;
       stroke-linecap: round;
       //stroke-dasharray: (50 * 2 * 3.14);
@@ -124,8 +120,21 @@
       transform-origin: 50% 50%;
 
       //dash width / gap
-      stroke-dasharray: calc(45 / 360 * 50 * 2 * 3.14) 50 * 2 * 3.14;
+      // stroke-dasharray: calc(45 / 360 * 50 * 2 * 3.14) 50 * 2 * 3.14;
       //animation: pieprogress 4s;
+    }
+
+    .js {
+      stroke-dasharray: calc(0.75 * 50 * 2 * 3.14) 50 * 2 * 3.14;
+    }
+    .css {
+      stroke-dasharray: calc(0.7 * 50 * 2 * 3.14) 50 * 2 * 3.14;
+    }
+    .csharp {
+      stroke-dasharray: calc(0.65 * 50 * 2 * 3.14) 50 * 2 * 3.14;
+    }
+    .mssql {
+      stroke-dasharray: calc(0.6 * 50 * 2 * 3.14) 50 * 2 * 3.14;
     }
   }
 }
@@ -137,7 +146,7 @@
     padding: 3px;
     border-radius: 1.3rem;
     margin-bottom: 2rem;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #fff;
     font-weight: 600;
     text-shadow: 1px 1px 1px rgba(var(--black), 0.5);
@@ -146,7 +155,7 @@
       content: attr(bar-item);
       background-color: lightblue;
       display: inline-block;
-      padding: 5px 0 5px 10px;
+      padding: 0.5rem 0 0.5rem 1rem;
       border-radius: inherit;
       //animation: load 2s 0s;
       animation: progress 4s;
@@ -158,6 +167,13 @@
 }
 [bar-val="30"]::before {
   width: 30%;
+}
+[bar-val="50"]::before {
+  width: 50%;
+}
+
+[bar-val="20"]::before {
+  width: 20%;
 }
 [bar-val="60"]::before {
   width: 60%;

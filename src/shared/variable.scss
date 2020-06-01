@@ -1,9 +1,10 @@
-$sz-largest: 75em; // 1200px
+$sz-largest: 75em; // 1200px tab-land
 $sz-large: 68.75em; // 1100px
-$sz-medium: 56.25em; // 900px
-$sz-small: 37.5em; // 600px
+$sz-medium: 56.25em; // 900px tab-port
+$sz-small: 37.5em; // 600px phone
 $sz-smallest: 31.25em; // 500px
-$sz-xsmall: 26.25em; // 380px
+$sz-xsmall: 26.25em; // 380px iphoneX
+//112.5em 1800+ lgDesktop
 
 // :export {
 //   sz-largest: $sz-largest; // 1200px
@@ -12,31 +13,4 @@ $sz-xsmall: 26.25em; // 380px
 //   sz-small: $sz-small; // 600px
 //   sz-smallest: $sz-smallest; // 500px
 //   sz-xsmall: $sz-xsmall; // 380px
-// }
-
-// @mixin respond($breakpoint){
-
-//   @if($breakpoint == phone){
-//       @media only screen and (max-width:37.5em){
-//          @content;
-//       } //< 600px
-//   }
-
-//   @if($breakpoint == tab-port){
-//       @media(max-width:56.25em){
-//           @content;
-//        } //<900px
-//   }
-
-//   @if($breakpoint == tab-land){
-//       @media(max-width:75em){
-//           @content;
-//        } //<1200px
-//   }
-
-//   @if($breakpoint == lgDesktop){
-//       @media(min-width:112.5em){
-//           @content;
-//        } //1800px+
-//   }
 // }

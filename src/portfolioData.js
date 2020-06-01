@@ -42,24 +42,28 @@ const skillContent = {
   skillsPie: [
     {
       text: "JavaScript",
+      styleName: "js",
       type: "frontend",
       chart: "pie",
       percent: "",
     },
     {
       text: "CSS",
+      styleName: "css",
       type: "frontend",
       chart: "pie",
       percent: "",
     },
     {
       text: "C#",
+      styleName: "csharp",
       type: "backend",
       chart: "pie",
       percent: "",
     },
     {
       text: "MSSQL",
+      styleName: "mssql",
       type: "backend",
       chart: "pie",
       percent: "",
@@ -83,7 +87,7 @@ const skillContent = {
       text: "SASS",
       type: "frontend",
       chart: "bar",
-      percent: "50",
+      percent: "60",
     },
     {
       text: "NodeJS",

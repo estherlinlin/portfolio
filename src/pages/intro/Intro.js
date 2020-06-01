@@ -80,10 +80,10 @@ const intro = () => (
           </div>
         </div>
       </div>
-      <div class="intro__heading">
-        <h1 class="heading-primary">
-          <span class="heading-primary--main">{introContent.title}</span>
-          <span class="heading-primary--sub">{introContent.subTitle}</span>
+      <div className="intro__heading">
+        <h1 className="heading-primary">
+          <span className="heading-primary--main">{introContent.title}</span>
+          <span className="heading-primary--sub">{introContent.subTitle}</span>
         </h1>
         <div className="btn-container">
           <Button className="btn btn--white btn--animate" href={"#contact"}>

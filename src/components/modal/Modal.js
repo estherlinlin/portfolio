@@ -10,13 +10,13 @@ const Modal = (props) => {
   };
 
   let vStyle = "w-100";
-  if (props.device == "pda") vStyle = "vertical-img";
+  if (props.device === "pda") vStyle = "vertical-img";
 
   return (
-    <div class="popup" id={props.href}>
-      <div class="popup__container">
-        <div class="popup__title">
-          <h2 class="heading-secondary u-mb-sm">{props.title}</h2>
+    <div className="popup" id={props.href}>
+      <div className="popup__container">
+        <div className="popup__title">
+          <h2 className="heading-secondary u-mb-sm">{props.title}</h2>
         </div>
         <div className="popup__content">
           <div className="popup__left-content">
@@ -27,10 +27,10 @@ const Modal = (props) => {
             >
               {props.source.map((item) => {
 
-                if (item.type == "video") {
+                if (item.type === "video") {
                   return (
                     <Carousel.Item>
-                      <video class="popup__video" autoplay muted loop playsInline controls="true">
+                      <video className="popup__video" autoPlay muted loop playsInline controls={true}>
                         <source src={item.path} type="video/mp4" />
                         Sorry, your browser is not supported.
                       </video>
@@ -51,7 +51,7 @@ const Modal = (props) => {
             </Carousel>
           </div>
 
-          <div class="popup__right-content">
+          <div className="popup__right-content">
             <div className="popup__desc">
               <ul className="popup__desc-list">
                 {props.desc.map((item) => {
@@ -68,7 +68,7 @@ const Modal = (props) => {
             </div>
           </div>
         </div>
-        <a href="#section-about" class="popup__close">
+        <a href="#section-about" className="popup__close">
           &times;
         </a>
       </div>

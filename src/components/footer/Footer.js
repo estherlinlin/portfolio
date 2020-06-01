@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.scss";
 
 const footer = () => (
-  <footer class="footer">
+  <footer className="footer">
     <div className="wave-container">
         <div className="wave"></div>
         <div className="wave"></div>

@@ -48,13 +48,13 @@
   float: left;
   font-size: 1.5em;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 1rem;
   line-height: normal;
 }
 .navigation-nav .logo-name {
   font-family: "Agustina Regular";
   font-weight: bold;
-  padding: 0 10px;
+  padding: 0 1rem;
 }
 
 /* menu */
@@ -71,7 +71,7 @@
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: 2.8rem 2rem;
   position: relative;
   user-select: none;
 }
@@ -82,7 +82,7 @@
   height: 2px;
   position: relative;
   transition: background 0.2s ease-out;
-  width: 18px;
+  width: 1.8rem;
 }
 
 .navigation-nav .menu-icon .navicon:before,
@@ -111,7 +111,7 @@
 }
 
 .navigation-nav .menu-btn:checked ~ .menu {
-  max-height: 370px;
+  max-height: 3.7rem;
 }
 
 .navigation-nav .menu-btn:checked ~ .menu-icon .navicon {
@@ -150,6 +150,6 @@
 // @media (max-width: 960px) and (min-width: 768px) {
 @media only screen and (max-width: $sz-medium) {
   .navigation-nav {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }

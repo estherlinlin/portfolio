@@ -8,8 +8,8 @@ import { portfolioContent } from "../../portfolioData";
 
 const portfolio = () => (
   <section className="section-portfolio" id="portfolio">
-    <div class="u-center-text u-mb-md">
-      <h2 class="heading-secondary">Portfolio</h2>
+    <div className="u-center-text u-mb-md">
+      <h2 className="heading-secondary">Portfolio</h2>
     </div>
     <div className="content">
       <div className="projects">

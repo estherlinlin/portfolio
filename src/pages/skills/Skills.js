@@ -4,14 +4,14 @@ import { skillContent } from "../../portfolioData";
 
 const skills = () => (
   <section className="section-skills" id="skills"> 
-    <div class="u-center-text u-mb-md">
-      <h2 class="heading-secondary">Skills</h2>
+    <div className="u-center-text u-mb-md">
+      <h2 className="heading-secondary">Skills</h2>
     </div>
     {/* <div className="content"> */}
       <div className="content">
         <div className="skill__left">
-          <h3 class="heading-tertiary u-mb-sm">Language skills</h3>
-          <div class="bottom-line"></div>
+          <h3 className="heading-tertiary u-mb-sm">Language skills</h3>
+          <div className="bottom-line"></div>
           <div className="skill__lang">
             <ul>
               <li>TOEIC 895分</li>
@@ -20,28 +20,28 @@ const skills = () => (
           </div>
         </div>
         <div className="skill__right">
-          <h3 class="heading-tertiary u-mb-sm">Programming skills</h3>
-          <div class="bottom-line"></div>
+          <h3 className="heading-tertiary u-mb-sm">Programming skills</h3>
+          <div className="bottom-line"></div>
           <div className="skill__programming">
             <div className="chartContainer">
               {skillContent.skillsPie.map((item) => {
                 return (
-                  <div class="pie">
-                    {/* <div class="pie__text">{item.text}</div> */}
+                  <div className="pie">
+                    {/* <div className="pie__text">{item.text}</div> */}
                     <svg viewBox="0 0 120 120">
                       <circle className="bg" cx="60" cy="60" r="50" />
                       <circle
-                        className={`progress ${item.text}`}
+                        className={`progress ${item.styleName}`}
                         cx="60"
                         cy="60"
                         r="50"
                       />
                       <text
-                        class="CircularProgress-Text"
+                        className="CircularProgress-Text"
                         x="60"
                         y="60"
                         dy=".4rem"
-                        text-anchor="middle"
+                        textAnchor="middle"
                       >
                         {item.text}
                       </text>
