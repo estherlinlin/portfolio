@@ -16,7 +16,7 @@ const portfolio = () => (
         {portfolioContent.projects.map((item) => {
           return (
             <figure className="projects__item">
-              <a href={`#${item.href}`} className="projects__link">
+              <a href={`${item.href}`} target={item.target} className="projects__link">
                 <img
                   src={item.coverimg_path}
                   alt={item.coverimg_alt}
@@ -31,7 +31,7 @@ const portfolio = () => (
               </a>
               <Modal
                 title={item.title}
-                href={item.href}
+                href={item.modalhref}
                 source={item.source}
                 desc={item.desc}
                 device={item.device}

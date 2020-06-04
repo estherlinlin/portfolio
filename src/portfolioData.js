@@ -13,6 +13,8 @@ import pnpms_cover from "./assets/img/pnpmsv2_1.png";
 import shuttle_cover from "./assets/img/shuttle_cover.png";
 import autowh_cover from "./assets/img/autowh_cover.png";
 import i18n_cover from "./assets/img/i18n_cover.png";
+import natour_1 from "./assets/img/natours_1.png";
+import trillo_1 from "./assets/img/trillo_1.png";
 //Intro section
 
 const introContent = {
@@ -103,6 +105,7 @@ const skillContent = {
 const portfolioContent = {
   projects: [
     {
+      href: "#project1",
       href: "project1",
       title: "維護保養系統",
       coverimg_path: pnpms_cover,
@@ -141,7 +144,8 @@ const portfolioContent = {
       ],
     },
     {
-      href: "project2",
+      href: "#project2",
+      modalhref: "project2",
       title: "自動倉儲系統",
       coverimg_path: shuttle_cover,
       coverimg_alt: "shuttle_cover",
@@ -188,7 +192,8 @@ const portfolioContent = {
       ],
     },
     {
-      href: "project3",
+      href: "#project3",
+      modalhref: "project3",
       title: "工時回報系統",
       coverimg_path: autowh_cover,
       coverimg_alt: "autowh_cover",
@@ -213,7 +218,8 @@ const portfolioContent = {
       ],
     },
     {
-      href: "project4",
+      href: "#project4",
+      modalhref: "project4",
       title: "i18n翻譯資料維護系統",
       coverimg_path: i18n_cover,
       coverimg_alt: "i18n_cover",
@@ -231,6 +237,40 @@ const portfolioContent = {
         { text: "Bootstrap", type: "frontend" },
         { text: "RESTFUL", type: "frontend" },
       ],
+    },
+    {
+      href: "https://estherlinlin.github.io/css-landing-page/",
+      title: "Landing Page with pure CSS",
+      target:"_blank",
+      coverimg_path: natour_1,
+      coverimg_alt: "natour_cover",
+      source: [
+        {
+          type: "img",
+          path: natour_1,
+          alt: "natour_cover",
+        },
+      ],
+      device: "desktop",
+      desc: [],
+      tags: [],
+    },
+    {
+      href: "https://estherlinlin.github.io/flexbox-landing-page/",
+      title: "Landing Page with Flexbox",
+      target:"_blank",
+      coverimg_path: trillo_1,
+      coverimg_alt: "trillo_cover",
+      source: [
+        {
+          type: "img",
+          path: trillo_1,
+          alt: "trillo_cover",
+        },
+      ],
+      device: "desktop",
+      desc: [],
+      tags: [],
     }
     // {
     //   href: "project4",
