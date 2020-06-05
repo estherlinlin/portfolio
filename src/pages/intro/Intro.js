@@ -3,7 +3,8 @@ import "./Intro.scss";
 import Button from "../../components/button/Button";
 import Menu from "../../components/menu/Menu";
 import { introContent } from "../../portfolioData";
-
+import resume_en from "../../assets/file/pinchunlin_cv_en.pdf";
+import resume_cn from "../../assets/file/pinchunlin_cv_cn.pdf";
 
 const intro = () => (
   <div>
@@ -89,8 +90,15 @@ const intro = () => (
           <Button className="btn btn--white btn--animate" href={"#contact"}>
             Contact Me
           </Button>
-          <Button className="btn btn--white btn--animate" href={"#contact"}>
-            Download Resume
+          <Button className="btn btn--white btn--animate" href={resume_cn} newTab>
+            Download Resume{" "}
+            <a className="download-link" href={resume_cn} target="_blank">
+              中
+            </a>
+            /
+            <a className="download-link" href={resume_en} target="_blank">
+              英
+            </a>
           </Button>
         </div>
       </div>

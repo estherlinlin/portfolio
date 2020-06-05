@@ -1,4 +1,3 @@
-
 @import "../../shared/variable.scss";
 
 .section-intro {
@@ -14,7 +13,6 @@
   @media only screen and (max-width: $sz-small) {
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 75% 95%, 0% 90%);
   }
-  
 }
 
 .intro__container {
@@ -36,7 +34,7 @@
   position: absolute;
   width: 70%;
   height: 75%;
-  clip-path: polygon(0% 100%, 59% 0%, 64% 3%,100% 100%);
+  clip-path: polygon(0% 100%, 59% 0%, 64% 3%, 100% 100%);
 
   bottom: 10%;
   right: -18%;
@@ -59,7 +57,6 @@
   top: 10rem;
   right: 18rem;
   z-index: 0;
-  
 }
 
 .mountain {
@@ -68,7 +65,7 @@
   position: absolute;
   bottom: 20%;
   right: 30%;
-  
+
   border-width: 0px 0rem 30rem 60rem;
   border-style: solid;
   border-color: transparent transparent var(--medium-green) transparent;
@@ -207,7 +204,7 @@
     width: 1.2rem;
     border-radius: 0;
     background-color: var(--light-brown);
-    height:45%;
+    height: 45%;
   }
 }
 
@@ -218,7 +215,7 @@
   width: 4rem;
   height: 6rem;
   z-index: 2;
-  
+
   //background: lightgrey;
 
   .head {
@@ -361,9 +358,8 @@
     left: 50%;
   }
 
-  .btn-container .btn{
+  .btn-container .btn {
     margin: 1rem;
-    
   }
 }
 
@@ -378,7 +374,7 @@
 
   &--main {
     display: block; //span is default by inline
-    font-family: var(--heading-font),sans-serif;
+    font-family: var(--heading-font), sans-serif;
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 2.5rem;
@@ -396,6 +392,15 @@
     font-weight: 400;
     letter-spacing: 0.5rem;
     //animation: moveInRight 1s ease-in;
+  }
+}
+
+.download-link {
+  color: var(--dark-grey);
+  font-size: 1.3rem;
+  &:hover {
+    font-weight: 700;
+    text-decoration: underline;
   }
 }
 
