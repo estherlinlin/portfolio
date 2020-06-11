@@ -152,13 +152,13 @@ class contact extends Component {
               </div>
 
               <div className="contact__media">
-                <a href="" className="contact__media-link" target="_blank">
+                <a href="https://github.com/estherlinlin" className="contact__media-link" target="_blank">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
-                <a href="" className="contact__media-link" target="_blank">
+                <a href="https://www.linkedin.com/in/esther-lin" className="contact__media-link" target="_blank">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
-                <a href="" className="contact__media-link" target="_blank">
+                <a href="https://codepen.io/pinchun" className="contact__media-link" target="_blank">
                   <FontAwesomeIcon icon={faCodepen} />
                 </a>
               </div>
