@@ -3,8 +3,8 @@ import "./Intro.scss";
 import Button from "../../components/button/Button";
 import Menu from "../../components/menu/Menu";
 import { introContent } from "../../portfolioData";
-import resume_en from "../../assets/file/pinchunlin_cv_en.pdf";
-import resume_cn from "../../assets/file/pinchunlin_cv_cn.pdf";
+import resume_en from "../../assets/file/pinchunlin_resume_en.pdf";
+import resume_cn from "../../assets/file/pinchunlin_resume_cn.pdf";
 
 const intro = () => (
   <div>
