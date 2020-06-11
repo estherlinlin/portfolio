@@ -106,7 +106,7 @@ const portfolioContent = {
   projects: [
     {
       href: "#project1",
-      href: "project1",
+      modalhref: "project1",
       title: "維護保養系統",
       coverimg_path: pnpms_cover,
       coverimg_alt: "pnpms_cover",
