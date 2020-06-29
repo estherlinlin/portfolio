@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7c415bdb5efb1e1989c57a599d8b6882",
+    "revision": "5eb27af8c6010faa3cd604d9538d7d4c",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "c751c37833c4a47767d0",
+    "revision": "851b392d2ff2146b18fe",
     "url": "/portfolio/static/css/main.0b46a4c2.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.b9ac8cd3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c751c37833c4a47767d0",
-    "url": "/portfolio/static/js/main.5aa2be63.chunk.js"
+    "revision": "851b392d2ff2146b18fe",
+    "url": "/portfolio/static/js/main.bd22b01c.chunk.js"
   },
   {
     "revision": "9a67a413ad95425131de",
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/natours_1.46c3b542.png"
   },
   {
-    "revision": "cf4cd2e4b33df257d3bd406377bd1f0b",
-    "url": "/portfolio/static/media/pinchunlin_resume_cn.cf4cd2e4.pdf"
+    "revision": "40ff107f70ccfcba71b3c32f7c2ec151",
+    "url": "/portfolio/static/media/pinchunlin_resume_cn.40ff107f.pdf"
   },
   {
     "revision": "cf9b561f236dccd7ca153b022a903999",
