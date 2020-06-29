@@ -155,7 +155,7 @@ class contact extends Component {
                 <a href="https://github.com/estherlinlin" className="contact__media-link" target="_blank">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
-                <a href="https://www.linkedin.com/in/esther-lin" className="contact__media-link" target="_blank">
+                <a href="https://www.linkedin.com/in/esther-lin-99819310a/" className="contact__media-link" target="_blank">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
                 <a href="https://codepen.io/pinchun" className="contact__media-link" target="_blank">
