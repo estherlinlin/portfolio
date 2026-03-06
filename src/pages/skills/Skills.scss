@@ -4,9 +4,10 @@
 .section-skills {
   padding: 8rem 10rem;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   @media only screen and (max-width: $sz-large) {
     padding: 10rem 6rem;
+    overflow: hidden;
   }
 }
 

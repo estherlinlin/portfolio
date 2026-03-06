@@ -1,19 +1,17 @@
 import React from "react";
+// import waveSvg from "../assets/img/wave.svg";
 import "./Footer.scss";
 
 const footer = () => (
   <footer className="footer">
-    <div className="wave-container">
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
+    <div class="ocean">
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
     </div>
     <div className="content">
       <p className="footer__copyright">
-        2020 &copy; EstherLin. All rights reserved
+        2020 &copy; PinChunLin. All rights reserved
       </p>
     </div>
   </footer>

@@ -15,8 +15,8 @@
 
 .section-timeline {
   background-color: var(--light-grey);
-  padding: 15rem 10rem 8rem 10rem;
-  margin-top: -9vh;
+  padding: 8rem 10rem 8rem 10rem;
+  // margin-top: -9vh;
 
   @media only screen and (max-width: $sz-large) {
     padding: 15rem 6rem;
@@ -29,7 +29,7 @@
   border-width: 5px 5px 0px 5px;
   border-color: #3797a4;
   border-style: dashed;
-  border-radius: 1rem;
+  border-radius: 1rem 0rem 0rem 1rem;
   flex: 0 0 40%;
   margin-left: 8rem;
 }
@@ -38,7 +38,7 @@
   padding: 6rem;
   border-bottom: 6px dotted #0779e4;
   border-right: 6px dotted #0779e4;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 1rem 0rem;
   flex: 1;
   @media only screen and (max-width: $sz-medium) {
     border-left: 6px dotted #0779e4;

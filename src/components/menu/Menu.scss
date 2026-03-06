@@ -1,8 +1,16 @@
 @import "../../shared/variable.scss";
 
+#timeline,
+#skills,
+#portfolio,
+#contact {
+  scroll-margin-top: 66px;
+}
+
 /* navigation-nav */
 .navigation {
   width: 100vw;
+  height: 66px;
   position: fixed;
   z-index: 1000;
   background-color: rgba(white, 0.8);
@@ -12,6 +20,7 @@
   max-width: 90%;
   //padding: 20px 10px;
   margin: 0px auto;
+  height: 100%;
 }
 
 .navigation-nav ul {
@@ -44,11 +53,12 @@
 }
 
 .navigation-nav .logo {
-  display: block;
+  display: flex;
+  align-items: center;
+  height: 100%;
   float: left;
   font-size: 1.5em;
   text-decoration: none;
-  margin-top: 1rem;
   line-height: normal;
 }
 .navigation-nav .logo-name {
@@ -74,6 +84,10 @@
   padding: 2.8rem 2rem;
   position: relative;
   user-select: none;
+
+  @media only screen and (max-width: $sz-medium) {
+    display: none;
+  }
 }
 
 .navigation-nav .menu-icon .navicon {

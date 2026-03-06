@@ -102,6 +102,8 @@
 }
 
 html {
+  scroll-behavior: smooth;
+
   // define 1 rem to 10px which default is 16px in most browsers
   // for not lock down users setting for font-size in browser
   font-size: 62.5%; // 10/16

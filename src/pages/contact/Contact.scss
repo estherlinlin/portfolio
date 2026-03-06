@@ -9,7 +9,7 @@
   background-color: var(--medium-grey);
   padding: 8rem 10rem;
   //position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 
   @media only screen and (max-width: $sz-large) {
     padding: 10rem 6rem;
@@ -30,7 +30,7 @@
   }
 
   &__detail {
-    padding: 3rem;
+    // padding:0rem 3rem;
     flex: 1 0 35%;
   }
 
@@ -91,6 +91,15 @@
       border-color: transparent var(--light-grey) transparent  transparent;
       transform: skewY(-10deg);
       z-index: -1;
+
+      @media only screen and (max-width: $sz-medium) {
+        display: none;
+      }
+      
+    }
+
+    @media only screen and (max-width: $sz-medium) {
+      margin-top: 4rem;
     }
   }
 }

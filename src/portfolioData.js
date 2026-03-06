@@ -18,7 +18,7 @@ import trillo_1 from "./assets/img/trillo_1.png";
 //Intro section
 
 const introContent = {
-  name: "Esther Lin",
+  name: "Pin Chunß Lin",
   title: "Hi, there!",
   subTitle: "Web Development & FrontEnd Development",
   resumeLink: "",

@@ -7,7 +7,7 @@ import resume_en from "../../assets/file/pinchunlin_resume_en.pdf";
 import resume_cn from "../../assets/file/pinchunlin_resume_cn.pdf";
 
 const intro = () => (
-  <div>
+  <div class="intro">
     <Menu />
     <header className="section-intro">
       <div className="intro__container">
