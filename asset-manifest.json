@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.a978611e.css",
+    "main.js": "/portfolio/static/js/main.d9415475.js",
+    "static/media/natours_1.png": "/portfolio/static/media/natours_1.990d19035b7f9cdef20e.png",
+    "static/media/green.jpg": "/portfolio/static/media/green.4a11a451d714d947f7a8.jpg",
+    "static/media/i18n_1.mp4": "/portfolio/static/media/i18n_1.e29cbf46bd900c5497bf.mp4",
+    "static/media/trillo_1.png": "/portfolio/static/media/trillo_1.bbac55ae122a97b8c111.png",
+    "static/media/pinchunlin_resume_cn.pdf": "/portfolio/static/media/pinchunlin_resume_cn.f035102157607c4f302b.pdf",
+    "static/media/pnpmsv2_1.png": "/portfolio/static/media/pnpmsv2_1.676ee16c3a80f009a813.png",
+    "static/media/pnpmsv2_2.png": "/portfolio/static/media/pnpmsv2_2.b8f6a385d246a2fc1dd7.png",
+    "static/media/autowh_1.png": "/portfolio/static/media/autowh_1.ac87d378abd7f699039b.png",
+    "static/media/pinchunlin_resume_en.pdf": "/portfolio/static/media/pinchunlin_resume_en.a7544c7daed3ac25cb80.pdf",
+    "static/media/autowh_cover.png": "/portfolio/static/media/autowh_cover.4b8457a6bd6204772bfd.png",
+    "static/media/pnpmsv2_3.png": "/portfolio/static/media/pnpmsv2_3.3355b34dbd6f676f998a.png",
+    "static/media/i18n_cover.png": "/portfolio/static/media/i18n_cover.797805f6dc69a9ae3241.png",
+    "static/media/autowk_2.png": "/portfolio/static/media/autowk_2.994b80f61cf439fa9b5f.png",
+    "static/media/shuttle_5.png": "/portfolio/static/media/shuttle_5.35bb1efdf04a6ab4ee2b.png",
+    "static/media/shuttle_2.png": "/portfolio/static/media/shuttle_2.06c2cd90aac2664fd5fa.png",
+    "static/media/shuttle_4.png": "/portfolio/static/media/shuttle_4.f2e901c5907a74d486f5.png",
+    "static/media/shuttle_cover.png": "/portfolio/static/media/shuttle_cover.cf648aecd86de9a7f502.png",
+    "static/media/shuttle_3.png": "/portfolio/static/media/shuttle_3.53b248cfd612b6f50602.png",
+    "static/media/shuttle_1.png": "/portfolio/static/media/shuttle_1.268f4ea50267297c5ac9.png",
+    "index.html": "/portfolio/index.html",
+    "static/media/wave.svg": "/portfolio/static/media/wave.850a152ef3fdd58c31d6.svg",
+    "main.a978611e.css.map": "/portfolio/static/css/main.a978611e.css.map",
+    "main.d9415475.js.map": "/portfolio/static/js/main.d9415475.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a978611e.css",
+    "static/js/main.d9415475.js"
+  ]
+}
